@@ -72,7 +72,7 @@ make
 > [!NOTE]
 > For the Phenotype model, specifying an output file is not necessary, as the program creates the output files automatically.
 
-5. Use the raw output files for further data evaluation and visualization. Details are provided in the article.
+5. Use the raw output files for further data evaluation and visualization.
 
 ## Parameters of the models
 

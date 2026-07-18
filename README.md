@@ -92,6 +92,7 @@ make
 - `N`: population size (default: 100000)
 >[!NOTE]
 > Lowering `N` can reduce computational time, but it will strengthen the effects of demographic stochasticity.
+- `REP`: number of parallel simulations (default: 50)
 - `mu`: mutation rate
 - `ave`: average concentration of the master type during the last $10^6$ generations
 - `aveave`: average value of `ave` across all `REP` parallel simulations
@@ -101,7 +102,6 @@ make
 - `GEN`: number of generations (default: 10000000)
 > [!WARNING]
 > If `GEN` is too low, the simulation may terminate before the population reaches its equilibrium state.
-- `REP`: number of parallel simulations (default: 50)
 - `n`: fitness landscape geometry factor (values investigated: 0.2, 0.4, 0.5, 0.6, 0.8, 1.0, 1.3, 1.7, 2.3, 3.0, 6.0)
 - `K`: maximum error score, reducing fitness to the baseline level (default: 7.0)
 > [!CAUTION]

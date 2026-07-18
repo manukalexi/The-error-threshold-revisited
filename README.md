@@ -28,7 +28,7 @@ The article presents results for the following specific cases of these models:
   - Motif
 - **Simplified model: $L=25$**
 
-The corresponding source codes and makefiles for each model are provided in the respective directories.
+The corresponding source codes and makefiles for each model are provided in the corresponding directories.
 
 ## Installation and Usage
 
@@ -134,7 +134,7 @@ make
 
 - **Simplified model:** mutation rate `mu` and concentrations of the `H0`, `H1`, and junk classes.
 
-> Sample outputs for each model are provided in the corresponding folders.
+> Sample outputs for each model are provided in the corresponding directories.
 
 
 ## Disclaimer

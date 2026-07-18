@@ -104,7 +104,7 @@ make
 > [!CAUTION]
 > Do not change `K`! It will mess up the determination of fitness and alter the population dynamics!
 
-- **Simplified model**
+### Simplified model
 - `L`: sequence length (default: 25)
 - `N`: number of Hamming classes (default: 3)
 - `mu`: mutation rate

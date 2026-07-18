@@ -93,6 +93,10 @@ make
 >[!NOTE]
 > Lowering `N` can reduce computational time, but it will strengthen the effects of demographic stochasticity.
 - `mu`: mutation rate
+- `ave`: average concentration of the master type during the last $10^6$ generations
+- `aveave`: average value of `ave` across all `REP` parallel simulations
+- `coex`: number of parallel simulations in which the master type survived
+- `ex`: number of parallel simulations in which the master type went extinct
 - `sigma`: reproductive superiority of the master sequence (default: 10)
 - `GEN`: number of generations (default: 10000000)
 > [!WARNING]
@@ -122,7 +126,15 @@ make
 - `tmax`: maximum integration time (default: 10000)
 - `dt_out`: output time interval (default: 0.01)
 
-## Sample output
+## Output
+
+- **Genotype model:** mutation rate `mu` and concentrations of the `L+1` Hamming classes.
+
+- **Phenotype model:** mutation rate `mu` and the average master concentration (`ave`) over the last $10^6$ generations for each parallel simulation. The final line contains `mu`, `aveave`, `coex`, and `ex`.
+
+- **Simplified model:** mutation rate `mu` and concentrations of the `H0`, `H1`, and junk classes.
+
+> Sample outputs for each model are provided in the corresponding folders.
 
 
 ## Disclaimer

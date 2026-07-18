@@ -69,7 +69,6 @@ make
 ```bash
 ./simplified_model > output_filename.txt
 ```
-> [!NOTE]
 > For the Phenotype model, specifying an output file is not necessary, as the program creates the output files automatically.
 
 5. Use the raw output files for further data evaluation and visualization.
@@ -113,11 +112,19 @@ make
 - `tmax`: maximum integration time (default: 10000)
 - `dt_out`: output time interval (default: 0.01)
 
-## Master sequences for the the Phenotypic model
+## Default master sequences for the the Phenotypic model
 
+### Master genotypes
 - Small loop: `UGGACCCCAAUGGCAAGGGGGAAUU`
 - Large loop: `CCCCAAAAAGUGGCAUGGUAGGGGG`
 - Motif: `AUCUUACUGGCUACGUCUACUUAGG`
+
+### Corresponding master phenotypes (ViennaRNA 2.7)
+The structures are represented in dot-bracket notation.
+- Small loop: ....((((........)))).....
+- Large loop: ((((................)))).
+- Motif: .........................
+
 
 ## Sample output
 

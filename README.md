@@ -115,9 +115,9 @@ make
 
 ## Master sequences for the the Phenotypic model
 
-- Small loop: `UGGACCCCAAUGGCAAGGGGGAAUU\0`
-- Large loop: `CCCCAAAAAGUGGCAUGGUAGGGGG\0`
-- Motif: `AUCUUACUGGCUACGUCUACUUAGG\0`
+- Small loop: `UGGACCCCAAUGGCAAGGGGGAAUU`
+- Large loop: `CCCCAAAAAGUGGCAUGGUAGGGGG`
+- Motif: `AUCUUACUGGCUACGUCUACUUAGG`
 
 ## Sample output
 

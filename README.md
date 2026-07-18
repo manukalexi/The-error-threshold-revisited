@@ -82,17 +82,17 @@ make
 - `mu`: mutation rate
 - `sigma_master`: reproductive superiority of the master sequence (default: 10)
 - `n_scal`: fitness landscape geometry factor (values investigated: 0.2, 0.4, 0.5, 0.6, 0.8, 1.0, 1.3, 1.7, 2.3, 3.0, 6.0)
-- `tmax`: maximum integration time (default: 10000)
+- `tmax`: maximum integration time (default: $10^4$)
 - `dt_out`: output time interval (default: 0.01)
 
 ### Phenotype model
 - `L`: genome length (default: 25)
 > [!CAUTION]
 > If you modify `L`, you must provide a master sequence of length `L` that satisfies the requirements.
-- `N`: population size (default: 100000)
+- `N`: population size (default: $10^5$)
 >[!NOTE]
 > Lowering `N` can reduce computational time, but it will strengthen the effects of demographic stochasticity.
-- `GEN`: number of generations (default: 10000000)
+- `GEN`: number of generations (default: $10^7$)
 > [!WARNING]
 > If `GEN` is too low, the simulation may terminate before the population reaches its equilibrium state.
 - `mu`: mutation rate
@@ -123,7 +123,7 @@ make
 - `mu`: mutation rate
 - `sigma`: reproductive superiority of the master sequence (default: 10)
 - `lambda`: fitness of the 1-error mutant (values investigated: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
-- `tmax`: maximum integration time (default: 10000)
+- `tmax`: maximum integration time (default: $10^4$)
 - `dt_out`: output time interval (default: 0.01)
 
 ## Output

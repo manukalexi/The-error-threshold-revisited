@@ -103,6 +103,16 @@ make
 > [!CAUTION]
 > Do not change `K`! It will mess up the determination of fitness and alter the population dynamics!
 
+**Master genotypes**
+- Small loop: `UGGACCCCAAUGGCAAGGGGGAAUU`
+- Large loop: `CCCCAAAAAGUGGCAUGGUAGGGGG`
+- Motif: `AUCUUACUGGCUACGUCUACUUAGG`
+
+**Corresponding master phenotypes (ViennaRNA 2.7)**
+- Small loop: ....((((........)))).....
+- Large loop: ((((................)))).
+- Motif: .........................
+
 ### Simplified model
 - `L`: sequence length (default: 25)
 - `N`: number of Hamming classes (default: 3)
@@ -111,20 +121,6 @@ make
 - `lambda`: fitness of the 1-error mutant (values investigated: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 - `tmax`: maximum integration time (default: 10000)
 - `dt_out`: output time interval (default: 0.01)
-
-## Default master sequences for the the Phenotypic model
-
-### Master genotypes
-- Small loop: `UGGACCCCAAUGGCAAGGGGGAAUU`
-- Large loop: `CCCCAAAAAGUGGCAUGGUAGGGGG`
-- Motif: `AUCUUACUGGCUACGUCUACUUAGG`
-
-### Corresponding master phenotypes (ViennaRNA 2.7)
-The structures are represented in dot-bracket notation.
-- Small loop: ....((((........)))).....
-- Large loop: ((((................)))).
-- Motif: .........................
-
 
 ## Sample output
 

@@ -130,7 +130,7 @@ make
 
 - **Genotype model:** mutation rate `mu` and concentrations of the `L+1` Hamming classes.
 
-- **Phenotype model:** mutation rate `mu` and the average master concentration (`ave`) over the last $10^6$ generations for each parallel simulation. The final line contains `mu`, `aveave`, `coex`, and `ex`.
+- **Phenotype model:** the average master concentration (`ave`) over the last $10^6$ generations for each parallel simulation. The final line contains `mu`, `aveave`, `coex`, and `ex`.
 
 - **Simplified model:** mutation rate `mu` and concentrations of the `H0`, `H1`, and junk classes.
 

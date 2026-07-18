@@ -76,8 +76,5 @@ make
 
 ## Parameters of the models
 
-## Output files
-
 ## Sample output
 
-## Reproducing the results

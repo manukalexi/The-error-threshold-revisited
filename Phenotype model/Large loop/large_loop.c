@@ -333,7 +333,7 @@ int main(int argc, char** argv){
             }else{
                 coex++;
                 aveave += ave / (0.1 * GEN) / N;
-                fprintf(output, "%lf\t%d\n", ave / (0.1 * GEN) / N, seed_number);
+                fprintf(output, "%lf\n", ave / (0.1 * GEN) / N);
             }
             fflush(output);
         }

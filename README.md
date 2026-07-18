@@ -88,9 +88,11 @@ make
 
 ### Phenotype model
 - `L`: genome length (default: 25)
-- `N`: population size (default: 100000)
 > [!CAUTION]
-> If you modify `N`, you must provide a master sequence of length `N` that satisfies the requirements.
+> If you modify `L`, you must provide a master sequence of length `L` that satisfies the requirements.
+- `N`: population size (default: 100000)
+>[!NOTE]
+> Lowering `N` can reduce computational time, but it will strengthen the effects of demographic stochasticity.
 - `mu`: mutation rate
 - `sigma`: reproductive superiority of the master sequence (default: 10)
 - `GEN`: number of generations (default: 10000000)

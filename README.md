@@ -38,7 +38,7 @@ The corresponding source codes and makefiles for each model are provided in the 
 - Phenotype model
 - Simplified model
 
-2. On Linux/Ubuntu systems with the GCC toolchain installed, navigate to the directory of the selected model and compile the code using:
+2. On Linux/Ubuntu systems with the GCC toolchain installed, navigate to the directory or subdirectory of the selected model and compile the code using:
 
 ```bash
 make
@@ -76,5 +76,37 @@ make
 
 ## Parameters of the models
 
+### Genotype model
+
+- `L`: sequence length (default: 25, 50, 100)
+- `N`: number of Hamming classes (default: L+1)
+- `μ`: mutation rate
+- `sigma_master`: reproductive superiority of the master sequence (default: 10)
+- `n_scal`: fitness landscape geometry factor (0.2, 0.4, 0.5, 0.6, 0.8, 1.0, 1.3, 1.7, 2.3, 3.0, 6.0)
+- `tmax`: maximum integration time (default: 10000)
+- `dt_out`: output time interval (default: 0.01)
+
+### Phenotype model
+- `L`: genome length (default: 25)
+- `N`: population size (default: 100000)
+> **Note:** if you modify `N`, you must provide a master sequence of length `N` that satisfies the requirements.
+- `μ`: mutation rate
+- `sigma`: reproductive superiority of the master sequence (default: 10)
+- `GEN`: number of generations (default: 10000000)
+> **Note:** If `GEN` is too low, the simulation may terminate before the population reaches its equilibrium state.
+- `REP`: number of parallel simulations (default: 50)
+- `n`: fitness landscape geometry factor (0.2, 0.4, 0.5, 0.6, 0.8, 1.0, 1.3, 1.7, 2.3, 3.0, 6.0)
+- `K`: maximum error score, reducing fitness to the baseline level (default: 7.0)
+> **Note:** if you modify `K`, the determination of fitness will be modified. Check the fitness function and adjust if neccessary!
+
+- **Simplified model**
+
+
 ## Sample output
+
+
+
+## Disclaimer
+
+The code provided in this repository is released for research purposes only and is provided without warranty or liability.
 

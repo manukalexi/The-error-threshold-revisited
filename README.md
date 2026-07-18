@@ -28,7 +28,7 @@ The article presents results for the following specific cases of these models:
   - Motif
 - **Simplified model: $L=25$**
 
-The corresponding source codes and makefiles for each model are provided in the corresponding directories.
+The source code and makefile for each model are provided in the respective directories.
 
 ## Installation and Usage
 

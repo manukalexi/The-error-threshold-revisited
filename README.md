@@ -23,9 +23,9 @@ The article presents results for the following specific cases of these models:
 
 - **Genotype model: $L=25,  50,  100$**
 - **Phenotype model: $L=25$**
-  - small loop
-  - large loop
-  - motif
+  - Small loop
+  - Large loop
+  - Motif
 - **Simplified model: $L=25$**
 
 The corresponding source codes and makefiles for each model are provided in the respective directories.
@@ -82,7 +82,7 @@ make
 - `N`: number of Hamming classes (default: L+1)
 - `mu`: mutation rate
 - `sigma_master`: reproductive superiority of the master sequence (default: 10)
-- `n_scal`: fitness landscape geometry factor (investigated: 0.2, 0.4, 0.5, 0.6, 0.8, 1.0, 1.3, 1.7, 2.3, 3.0, 6.0)
+- `n_scal`: fitness landscape geometry factor (values investigated: 0.2, 0.4, 0.5, 0.6, 0.8, 1.0, 1.3, 1.7, 2.3, 3.0, 6.0)
 - `tmax`: maximum integration time (default: 10000)
 - `dt_out`: output time interval (default: 0.01)
 
@@ -99,7 +99,7 @@ make
 > [!WARNING]
 > If `GEN` is too low, the simulation may terminate before the population reaches its equilibrium state.
 - `REP`: number of parallel simulations (default: 50)
-- `n`: fitness landscape geometry factor (investigated: 0.2, 0.4, 0.5, 0.6, 0.8, 1.0, 1.3, 1.7, 2.3, 3.0, 6.0)
+- `n`: fitness landscape geometry factor (values investigated: 0.2, 0.4, 0.5, 0.6, 0.8, 1.0, 1.3, 1.7, 2.3, 3.0, 6.0)
 - `K`: maximum error score, reducing fitness to the baseline level (default: 7.0)
 > [!CAUTION]
 > Do not change `K`! It will mess up the determination of fitness and alter the population dynamics!
@@ -109,11 +109,19 @@ make
 - `N`: number of Hamming classes (default: 3)
 - `mu`: mutation rate
 - `sigma`: reproductive superiority of the master sequence (default: 10)
-- `lambda`: fitness of the 1-error mutant (investigated: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+- `lambda`: fitness of the 1-error mutant (values investigated: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+- `tmax`: maximum integration time (default: 10000)
+- `dt_out`: output time interval (default: 0.01)
+
+## Master sequences for the the Phenotypic model
+
+- Small loop: `UGGACCCCAAUGGCAAGGGGGAAUU\0`
+- Large loop: `CCCCAAAAAGUGGCAUGGUAGGGGG\0`
+- Motif: `AUCUUACUGGCUACGUCUACUUAGG\0`
 
 ## Sample output
 
 
 ## Disclaimer
-The code provided in this repository is released for research purposes only and is provided without warranty or liability.
+**The code provided in this repository is released for research purposes only and is provided without warranty or liability.**
 
